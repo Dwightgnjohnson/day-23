@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20141022144440) do
     t.string   "title"
     t.string   "author"
     t.integer  "year"
-    t.boolean  "available"
+    t.boolean  "available",  default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20141022144440) do
     t.integer  "patron_id"
     t.string   "book_id"
     t.string   "integer"
-    t.datetime "checked_out_at"
-    t.datetime "checkout_in_at"
+    t.datetime "checkout_at"
+    t.datetime "checkin_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

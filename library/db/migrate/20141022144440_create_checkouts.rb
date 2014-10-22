@@ -4,8 +4,8 @@ class CreateCheckouts < ActiveRecord::Migration
       t.integer :patron_id
       t.string :book_id
       t.string :integer
-      t.datetime :checked_out_at
-      t.datetime :checkout_in_at
+      t.datetime :checkout_at
+      t.datetime :checkin_at
 
       t.timestamps
     end
