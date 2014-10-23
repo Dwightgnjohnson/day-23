@@ -1,3 +1,5 @@
+Book.destroy_all
+Patron.destroy_all
 
 Book.create title: "Catcher in the Rye", author: "J.D. Salinger", year: 1951
 Book.create title: "On the road", author: "Jack Kerouac", year: 1956
